@@ -9652,3 +9652,66 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Vùng chứa giỏ hàng */
+#cart {
+  background-color: #f8f9fa; /* Màu nền nhạt */
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Danh sách sản phẩm trong giỏ hàng */
+#cartItems {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cartItems li {
+  display: flex;
+  justify-content: space-between; /* Đưa nút xóa sang bên phải */
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Hiển thị khi giỏ hàng trống */
+#cartItems li:first-child {
+  color: #888;
+  font-style: italic;
+}
+
+/* Nút xóa sản phẩm */
+#cartItems button {
+  background-color: #dc3545; /* Màu nền đỏ cho nút xóa */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+#cartItems button:hover {
+  background-color: #c82333; /* Đổi màu khi di chuột */
+}
+
+/* Tổng số tiền */
+#total {
+  font-weight: bold;
+  color: #343a40;
+  font-size: 1.2em;
+}
+
+/* Vùng hiển thị tổng tiền */
+#cartTotal {
+  text-align: right;
+  padding-top: 10px;
+  font-size: 1.1em;
+  color: #555;
+}
